@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android" package="${PackageName}" android:versionCode="1" android:versionName="${Version}" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
 	<!-- Required for SEND_SMS function. -->
 	<!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
 	<!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
@@ -66,7 +65,7 @@
 	
 	
 	
-	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true">
+	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false">
 		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
 		<activity android:name=".A" 
 					android:label="${ApplicationName}" 	
@@ -152,4 +151,5 @@
 			But to use this feature in published apps, you must define it-->
 		<!--<activity android:name="io.smartface.android.sfcore.device.multimedia.crop.SFCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>-->
 	</application>
+
 </manifest>
