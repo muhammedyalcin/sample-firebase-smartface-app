@@ -18,8 +18,8 @@ Application.onUnhandledError = function (e: UnhandledError) {
             System.OS === 'Android' ? error.stack : e.message + '\n\n*' + error.stack,
     });
 };
-
-import Firebase from 'sf-plugin-firebase';
+ 
+import Firebase from '@smartface/plugin-firebase';
 import File = require('@smartface/native/io/file');
 var iOSPlistFile = new File({
     path: 'assets://GoogleService-Info.plist'
@@ -28,11 +28,11 @@ var firebaseConfig = {
     iosFile : iOSPlistFile
 };
 
-import FirebaseCrashlytics from 'sf-plugin-firebase/firebaseCrashlytics';
+import FirebaseCrashlytics from '@smartface/plugin-firebase/firebaseCrashlytics';
 
-if (Firebase.apps().length === 0) {
-  Firebase.initializeApp(firebaseConfig);
+// if (Firebase.apps().length === 0) {
+//   Firebase.initializeApp(firebaseConfig);
   FirebaseCrashlytics.ios.with([new FirebaseCrashlytics()]);
-}
+// }
 
 router.push('/pages/page1');

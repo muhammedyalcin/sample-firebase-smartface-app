@@ -2,9 +2,9 @@ import Page1Design from 'generated/pages/page1';
 import componentContextPatch from '@smartface/contx/lib/smartface/componentContextPatch';
 import PageTitleLayout from 'components/PageTitleLayout';
 import System from '@smartface/native/device/system';
-import FirebaseCrashlytics from 'sf-plugin-firebase/firebaseCrashlytics';
-import Firebase from 'sf-plugin-firebase';
-import FirebaseAnalytics from 'sf-plugin-firebase/firebaseAnalytics';
+import FirebaseCrashlytics from '@smartface/plugin-firebase/firebaseCrashlytics';
+import Firebase from '@smartface/plugin-firebase';
+import FirebaseAnalytics from '@smartface/plugin-firebase/firebaseAnalytics';
 
 export default class Page1 extends Page1Design {
     router: any;
@@ -27,7 +27,7 @@ export default class Page1 extends Page1Design {
 function onShow(superOnShow: () => void) {
     superOnShow();
     this.headerBar.titleLayout.applyLayout();
-    
+
      /*
       You can use Crashlytics.setUserIdentifier to provide an ID number, token, or hashed value that uniquely     
       identifies the end-user of your application without disclosing or transmitting any of their personal 
