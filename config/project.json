@@ -38,7 +38,10 @@
 			"publisherId": ""
 		},
 		"googleCloudMessaging": {
-			"senderID": "984788922499"
+			"senderID": "734876119376",
+            "appID": "1:734876119376:android:740039d0f9778a1c",
+            "projectID": "notificationtest-83b75",
+            "apiKey": "AIzaSyARC4n21pWu6sHVP-WocA8yShNViVCSZog"
 		},
 		"googlePlayServices": {
 			"inAppPurchaseProductKey": ""
