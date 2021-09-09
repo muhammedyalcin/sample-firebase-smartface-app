@@ -90,7 +90,7 @@
 					"modules": {
 						"firebaseplugin": {
 							"path": "plugins/Android/firebaseplugin",
-							"active": true
+							"active": false
 						}
 					}
 				},
