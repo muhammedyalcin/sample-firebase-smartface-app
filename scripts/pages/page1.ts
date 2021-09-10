@@ -4,6 +4,7 @@ import PageTitleLayout from 'components/PageTitleLayout';
 import System from '@smartface/native/device/system';
 import Notifications from "@smartface/native/global/notifications"
 import FirebaseAnalytics from '@smartface/plugin-firebase/firebaseAnalytics';
+import FirebaseCrashlytics from '@smartface/plugin-firebase/firebaseCrashlytics';
 
 const NativeLog = requireClass("android.util.Log");
 
