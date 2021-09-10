@@ -22,9 +22,9 @@
     "filtrex" "^0.5.4"
 
 "@smartface/extension-utils@^15.0.0":
-  "integrity" "sha512-lQx2XsnxOEDRJ9nfiS+HWvVvjgW6EJiP/C2hXeiIfM8z0NSglHmmBlQ17hpNqnk5wEUZj/fAsV6xQnDF7EqZBA=="
-  "resolved" "https://registry.npmjs.org/@smartface/extension-utils/-/extension-utils-15.0.0.tgz"
-  "version" "15.0.0"
+  "integrity" "sha512-zSfoV92gNE14P56kM1CeVGfc3h62Oof8VrSj9kmMHTQByvYegFZpMdEdEycHbJLNCm4XP0ep8f5dgXtKiQjElQ=="
+  "resolved" "https://registry.npmjs.org/@smartface/extension-utils/-/extension-utils-15.0.2.tgz"
+  "version" "15.0.2"
   dependencies:
     "apexcharts" "^3.26.3"
     "html-parse-stringify" "1.0.2"
@@ -42,15 +42,15 @@
   dependencies:
     "html-parse-stringify" "1.0.2"
 
-"@smartface/native@^4.3.3":
-  "integrity" "sha512-BaNyfgi/aQRqCuzm9yQZK0rVQuwrwLSY0fgWyHpbD9gC3hsUUSO23ttn9H2arngAQYL7g1ABLuWxge6DvY74Bg=="
-  "resolved" "https://registry.npmjs.org/@smartface/native/-/native-4.3.3.tgz"
-  "version" "4.3.3"
+"@smartface/native@4.3.5-alpha.3":
+  "integrity" "sha512-uvHd4HExaUIi0LQAozaNqP8mmgxq0+jc0xS5l24SPEoJ2wGRqFeE8qaxwBfVb1EGayluv9pdDy6mRzG/HSakWw=="
+  "resolved" "https://registry.npmjs.org/@smartface/native/-/native-4.3.5-alpha.3.tgz"
+  "version" "4.3.5-alpha.3"
 
-"@smartface/plugin-firebase@^6.0.0":
-  "integrity" "sha512-evcCXgiK0RtSUXUdMfYNAnqjeduUGZpNMBiVCqJ+vd0zy9oivry0lCG+UVVcP8chyiuAc7l9k2pTKkdhQCdGIw=="
-  "resolved" "https://registry.npmjs.org/@smartface/plugin-firebase/-/plugin-firebase-6.0.0.tgz"
-  "version" "6.0.0"
+"@smartface/plugin-firebase@6.0.1":
+  "integrity" "sha512-tunRQ3wQJlH7qKoDH3f7O2aW7CvLG73BzgQqTM6KY9BwPBSZMMmpBuarISn6cEKibPJIb9jCxFeror9U0tEpQw=="
+  "resolved" "https://registry.npmjs.org/@smartface/plugin-firebase/-/plugin-firebase-6.0.1.tgz"
+  "version" "6.0.1"
 
 "@smartface/router@^2.0.0-rc":
   "integrity" "sha512-cy41IsftvOOQdkm3H+OE3FxVqQvt3VZ3iwrgdMk86HMjCU7AXrOfDx9pW4uFFnziDnfEOcBvpxRtKV++sO3m1Q=="
@@ -66,9 +66,9 @@
   "version" "2.0.0"
 
 "apexcharts@^3.26.3":
-  "integrity" "sha512-1ZrqiQT0VahkqW0kVjf5QVURYGaHMlGN08BoIZG2c2U/gY2AtnEoFN4r9q4d/pYYYKvI9AyLBHq0otzcVGrHAw=="
-  "resolved" "https://registry.npmjs.org/apexcharts/-/apexcharts-3.27.3.tgz"
-  "version" "3.27.3"
+  "integrity" "sha512-5M1KitI/XmY2Sx6ih9vQOXyQUTmotDG/cML2N6bkBlVseF10RPSzM7dkrf7Y68apSZF6e7J581gXXu1+qkLhCA=="
+  "resolved" "https://registry.npmjs.org/apexcharts/-/apexcharts-3.28.1.tgz"
+  "version" "3.28.1"
   dependencies:
     "svg.draggable.js" "^2.2.2"
     "svg.easing.js" "^2.0.0"

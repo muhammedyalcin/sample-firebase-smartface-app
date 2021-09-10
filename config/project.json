@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "Smartface Helloworld Boilerplate",
+		"name": "Smf Firebase Test",
 		"company": "Smartface User",
 		"webSite": "https://www.smartface.io",
 		"version": "1.0.0",
@@ -38,7 +38,10 @@
 			"publisherId": ""
 		},
 		"googleCloudMessaging": {
-            "senderID": ""
+			"senderID": "734876119376",
+			"appID": "1:734876119376:android:740039d0f9778a1c",
+			"projectID": "notificationtest-83b75",
+			"apiKey": "AIzaSyARC4n21pWu6sHVP-WocA8yShNViVCSZog"
 		},
 		"googlePlayServices": {
 			"inAppPurchaseProductKey": ""
@@ -87,7 +90,7 @@
 					"modules": {
 						"firebaseplugin": {
 							"path": "plugins/Android/firebaseplugin",
-							"active": false
+							"active": true
 						}
 					}
 				},
@@ -101,12 +104,12 @@
 		"output": {
 			"ios": {
 				"outputFolder": "output/iOS",
-				"bundleIdentifier": "io.smartface.demo",
+				"bundleIdentifier": "io.smartface.firebasetest",
 				"targetedDeviceFamily": "universal"
 			},
 			"android": {
 				"outputFolder": "output/Android",
-				"packageName": "io.smartface.demo",
+				"packageName": "io.smartface.firebasetest",
 				"obfuscationEnabled": false
 			}
 		},
