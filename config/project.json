@@ -106,7 +106,7 @@
 			},
 			"android": {
 				"outputFolder": "output/Android",
-				"packageName": "io.smartface.demo",
+				"packageName": "com.smartface.fcmnotificationtest",
 				"obfuscationEnabled": false
 			}
 		},
