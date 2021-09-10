@@ -26,7 +26,7 @@
 	<!-- Required for read phone state. -->
 	<!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
 	<!-- 	<uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" /><uses-permission android:name="android.permission.RESTART_PACKAGES" /> -->
-	<!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -65,7 +65,11 @@
 	
 	
 	
-	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true"  android:name="androidx.multidex.MultiDexApplication" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false">
+	<application  android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true" 
+     android:name="androidx.multidex.MultiDexApplication" 
+     android:requestLegacyExternalStorage="true" 
+     android:extractNativeLibs="true" 
+     android:allowNativeHeapPointerTagging="false">
 		<uses-library android:name="org.apache.http.legacy" android:required="false"/>
 		<activity android:name=".A" 
 					android:label="${ApplicationName}" 	
@@ -101,7 +105,6 @@
 		<!--
 				BroadcastReceiver that will receive intents from GCM
 				services and handle them to the custom IntentService.
-
 				The com.google.android.c2dm.permission.SEND permission is necessary
 				so only GCM services can send data messages for the app.
 			-->
@@ -114,19 +117,7 @@
 				<action android:name="com.google.firebase.MESSAGING_EVENT" />
 			</intent-filter>
 		</service>
-		<receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-			<intent-filter>
-				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
-			</intent-filter>
-		</receiver>
-		<service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
-			<intent-filter android:priority="-500">
-				<action android:name="com.google.firebase.MESSAGING_EVENT" />
-			</intent-filter>
-		</service>
-		<service android:name="com.google.firebase.components.ComponentDiscoveryService">
-			<meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar" />
-		</service>
+		
 		<!--
 		
 		Application-specific subclass of GCMBaseIntentService that will
@@ -151,5 +142,4 @@
 			But to use this feature in published apps, you must define it-->
 		<!--<activity android:name="io.smartface.android.sfcore.device.multimedia.crop.SFCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>-->
 	</application>
-
 </manifest>
