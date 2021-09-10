@@ -16,7 +16,7 @@ Application.onUnhandledError = function (e: UnhandledError) {
         title: e.type || lang.applicationError,
         message:
             System.OS === 'Android' ? error.stack : e.message + '\n\n*' + error.stack,
-    });
+    }); 
 };
- 
+  
 router.push('/pages/page1');
